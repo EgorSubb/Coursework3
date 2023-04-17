@@ -1,7 +1,6 @@
 import json
 import os
 from datetime import datetime
-# from operator import attrgetter
 
 
 def load_data(path):
@@ -25,9 +24,7 @@ def data_sorting(filter_data):
     last_operations = data[-5:]
     sort_by_date = last_operations[::-1]
     return sort_by_date
-    # data = sorted(filter_data, key=attrgetter('date'))
-    # sort_by_date = data[::-1]
-    # return sort_by_date
+
 
 
 def get_formatted_data(sort_data):
